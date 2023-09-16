@@ -1,1 +1,152 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background: #f6e8d7;
+  background: -webkit-radial-gradient(center, ellipse cover, #f6e8d7 0%, #f6e8d7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e8d7', endColorstr='#dabe9b',GradientType=1);
+}
+
+.floor {
+  position: absolute;
+  background: #232323;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: 400px;
+}
+
+.men {
+  -webkit-animation: fade-in 8s ease-out 1s;
+          animation: fade-in 8s ease-out 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.leg {
+  position: absolute;
+  top: 0;
+  left: 147px;
+  width: 151px;
+  height: 245px;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.shoe {
+  position: absolute;
+  width: 151px;
+  height: 128px;
+  bottom: 0;
+  left: 0;
+  background: url("https://100dayscss.com/codepen/doc-martens.svg") center center no-repeat;
+  -webkit-transform-origin: 0 95%;
+          transform-origin: 0 95%;
+}
+
+.left {
+  -webkit-animation: leg-swing 2s ease-in-out infinite;
+          animation: leg-swing 2s ease-in-out infinite;
+}
+
+.left .shoe {
+  -webkit-animation: shoe-turn 2s ease-in-out infinite;
+          animation: shoe-turn 2s ease-in-out infinite;
+}
+
+.right {
+  -webkit-animation: leg-swing 2s ease-in-out 1s infinite;
+          animation: leg-swing 2s ease-in-out 1s infinite;
+}
+
+.right .shoe {
+  -webkit-animation: shoe-turn 2s ease-in-out 1s infinite;
+          animation: shoe-turn 2s ease-in-out 1s infinite;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes leg-swing {
+  0%, 100% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@keyframes leg-swing {
+  0%, 100% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes shoe-turn {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg) translateY(-5px) translateX(10px);
+            transform: rotate(-10deg) translateY(-5px) translateX(10px);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(0px);
+            transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+  50% {
+    -webkit-transform: rotate(10deg) translateY(-10px) translateX(10px);
+            transform: rotate(10deg) translateY(-10px) translateX(10px);
+  }
+  75% {
+    -webkit-transform: rotate(0deg) translateY(-30px) translateX(0px);
+            transform: rotate(0deg) translateY(-30px) translateX(0px);
+  }
+}
+
+@keyframes shoe-turn {
+  0%, 100% {
+    -webkit-transform: rotate(-10deg) translateY(-5px) translateX(10px);
+            transform: rotate(-10deg) translateY(-5px) translateX(10px);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(0px);
+            transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+  50% {
+    -webkit-transform: rotate(10deg) translateY(-10px) translateX(10px);
+            transform: rotate(10deg) translateY(-10px) translateX(10px);
+  }
+  75% {
+    -webkit-transform: rotate(0deg) translateY(-30px) translateX(0px);
+            transform: rotate(0deg) translateY(-30px) translateX(0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
